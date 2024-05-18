@@ -7,6 +7,13 @@ checker.addEventListener("click", () => {
 
     if (telNumber.value === "") {
         alert("Please provide a phone number");
+    } else {
+        const regex = /^(1\s?)?(\d{3}|\(\d{3}\))[\-\s]?\d{3}[\-\s]?\d{4}$/g;
+        if (regex.test(telNumber.value)) {
+            sonuc.innerText = `Valid US number: ${telNumber.value}`;
+        } else {
+            sonuc.innerText = `Invalid US number: ${telNumber.value}`;
+        }
     }
 })
 
