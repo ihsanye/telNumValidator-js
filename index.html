@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>Document</title>
+    <title>Phone Num Validator</title>
 </head>
 
 <body>
-
-    <input id="user-input" type="text" value="">
-    <button id="check-btn">Check</button>
-    <button id="clear-btn">Clear</button>
-    <div id="results-div" value=""></div>
+    <div class="container">
+        <h1>Telephone Number Validator</h1>
+        <div class="phone">
+            <div style="color: white; margin: 5px 0 -15px 0;">..........</div>
+            <div class="input-part">
+                <p>Enter a Phone Number Please</p>
+                <input id="user-input" type="text" value="">
+                <div id="results-div" value=""></div>
+            </div>
+            <div class="buttons">
+                <button id="check-btn">Check</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>

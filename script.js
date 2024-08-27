@@ -13,6 +13,7 @@ checker.addEventListener("click", () => {
             sonuc.innerText = `Valid US number: ${telNumber.value}`;
         } else {
             sonuc.innerText = `Invalid US number: ${telNumber.value}`;
+            sonuc.style.color = "red";
         }
     }
 })
